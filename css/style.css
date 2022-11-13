@@ -1,0 +1,151 @@
+body {
+     font-family:  'Outfit', sans-serif;
+     font-size: 18px;
+     font-weight: 300;
+     padding: 60px 25px;
+   
+     background-color: hsl(217, 54%, 11%);
+  
+
+
+}
+
+.card {
+     background-color: hsl(216, 50%, 16%);
+     padding: 24px;
+     border-radius: 20px;
+}
+.card-preview {
+     position: relative;
+     margin: 0 auto 30px ;
+}
+.card-preview:hover .main-overlay{
+     display: grid;
+}
+.main-overlay {
+     display: none;
+     position: absolute;
+     place-items: center;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     cursor: pointer;
+}
+.overlay {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     opacity: 0.7;
+     background-color: hsl(178, 100%, 50%);
+     border-radius: 15px;
+     z-index: 1;
+}
+
+.main-overlay .overlay-icon {
+     z-index: 2;
+     opacity: 0.7;
+
+}
+
+.main-img {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 0 auto  ;
+  
+}
+.main-overlay{
+   
+     max-width: 100%;
+     border-radius: 15px;
+     margin: 0 auto;
+
+
+}
+.card-title {
+     color: white;
+     margin-top: 0;
+     margin-bottom: 25px;
+}
+.card-title:hover {
+cursor: pointer;
+color: hsl(178, 100%, 50%);
+}
+.card-description {
+     font-size: 20px;
+     color:  hsl(215, 51%, 70%); 
+     margin-bottom: 23px;
+     line-height: 40px;
+     margin-top: 0;
+}
+.value img {
+     width: 15px;
+     height: 15px;
+     margin-right: 10px;
+}
+.time img {
+     margin-right: 10px;
+}
+.value p {
+     color: #fe4900 ;
+     font-weight: 600;
+}
+.time p {
+     color: #8bacd9;
+     font-weight: 600;
+}
+
+.value-time {
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1px solid #8bacd94b;
+     margin-bottom: 30px;
+     padding-bottom: 16px;
+
+     
+}
+
+.value, .time {
+     display: flex;
+     align-items: center;
+}
+
+.user-wrapper  img {
+     width: 45px;
+     height: 45px;
+     border: 1px solid white;
+     border-radius: 50%;
+     margin-right: 20px;
+
+}
+.user-wrapper {
+     display: flex;
+    align-items: center;
+}
+.user-name {
+     color:  hsl(215, 51%, 70%);
+     font-size: 15px;
+     font-weight: 400;
+}
+.user-name a {
+     color: white;
+     text-decoration: none;
+}
+
+.user-name a:hover{
+     cursor: pointer;
+     color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width: 351px) {
+     html {
+       height: 100%;
+       display: grid;
+       place-items: center;
+     }
+   
+     .card {
+       max-width: 350px;
+     }
+   }
